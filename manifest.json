@@ -5,7 +5,7 @@
 	"manifest_version": 2,
 	"name": "Bluesky Sidebar",
 	"description": "Displays Bluesky in the sidebar.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	
 	"browser_specific_settings": {
 		"gecko": {
