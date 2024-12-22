@@ -3,9 +3,9 @@
 		"scripts": ["background.js"]
 	},
 	"manifest_version": 2,
-	"name": "Twitter Sidebar",
-	"description": "Displays Twitter in the sidebar.",
-	"version": "1.5.2",
+	"name": "Bluesky Sidebar",
+	"description": "Displays Bluesky in the sidebar.",
+	"version": "1.0.0",
 	
 	"browser_specific_settings": {
 		"gecko": {
@@ -14,17 +14,12 @@
 		}
 	},
 
-	"options_ui": {
-		"page": "options/options.html",
-		"browser_style": true
-	},
-
 	"sidebar_action": {
 		"default_icon": {
 			"48": "icons/icon1_48.png",
 			"96": "icons/icon1_96.png"
 		},
-		"default_title": "Twitter",
+		"default_title": "Bluesky",
 		"browser_style": false,
 		"default_panel": "panel.html"
 	},
@@ -41,7 +36,7 @@
 			"suggested_key": {
 				"default": "Shift+Alt+U"
 			},
-			"description": "Toggle the Twitter sidebar"
+			"description": "Toggle the Bluesky sidebar"
 		}
 	}
 }

@@ -1,16 +1,5 @@
 sidebarProfiles = {
-	twitter: "https://mobile.twitter.com",
-	tweetdeck: "https://tweetdeck.twitter.com"
-}
-
-function changeProfile() {
-	browser.storage.sync.get("tweetdeck").then((res) => {
-		if (res.tweetdeck === true) {
-			setSidebarAttributes(sidebarProfiles.tweetdeck)
-		} else {
-			setSidebarAttributes(sidebarProfiles.twitter)
-		}
-	});
+	bluesky: "https://bsky.app",
 }
 
 function setSidebarAttributes(profile) {
