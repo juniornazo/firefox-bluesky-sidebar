@@ -4,7 +4,7 @@ sidebarProfiles = {
 }
 
 function changeProfile() {
-	browser.storage.sync.get("tweetdeck").then((res) => {
+	browser.storage.sync.get("tokimeki").then((res) => {
 		if (res.tokimeki === true) {
 			setSidebarAttributes(sidebarProfiles.tokimeki)
 		} else {

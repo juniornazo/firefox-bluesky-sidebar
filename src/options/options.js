@@ -19,7 +19,7 @@ function updateSettings(e) {
     shortcut: document.querySelector('#shortcut').value
   });
   browser.storage.sync.set({
-    tweetdeck: document.querySelector("#tokimeki").checked
+    tokimeki: document.querySelector("#tokimeki").checked
   });
   e.preventDefault();
 }
