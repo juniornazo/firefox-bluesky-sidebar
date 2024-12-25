@@ -1,11 +1,20 @@
 {
 	"background": {
-		"scripts": ["background.js"]
+		"scripts": ["src/background.js"]
 	},
 	"manifest_version": 2,
 	"name": "Bluesky Sidebar",
 	"description": "Displays Bluesky in the sidebar.",
 	"version": "1.0.2",
+
+	"permissions": [
+    "https://bsky.app/"
+  	],
+
+	"options_ui": {
+		"page": "src/options/options.html",
+		"browser_style": true
+	},
 	
 	"browser_specific_settings": {
 		"gecko": {
@@ -16,26 +25,31 @@
 
 	"sidebar_action": {
 		"default_icon": {
-			"48": "icons/icon1_48.png",
-			"96": "icons/icon1_96.png"
+			"48": "src/icons/icon1_48.png",
+			"96": "src/icons/icon1_96.png"
 		},
 		"default_title": "Bluesky",
-		"default_panel": "panel.html"
+		"default_panel": "src/sidebar/panel.html"
 	},
 
 	"icons": {
-		"48": "icons/icon2_48.png",
-		"96": "icons/icon2_96.png"
+		"48": "src/icons/icon2_48.png",
+		"96": "src/icons/icon2_96.png"
 	},
-	
-	"permissions": [ "storage" ],
 	
 	"commands": {
 		"_execute_sidebar_action": {
 			"suggested_key": {
-				"default": "Shift+Alt+U"
+				"default": "Shift+Alt+B"
 			},
 			"description": "Toggle the Bluesky sidebar"
 		}
-	}
+	},
+
+	"browser_action": {
+    	"default_icon": {
+      		"48": "src/icons/icon2_48.png",
+      		"96": "src/icons/icon2_96.png"
+    	}
+		}
 }
